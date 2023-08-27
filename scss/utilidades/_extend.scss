@@ -1,0 +1,14 @@
+//extend
+
+%estilos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding: 2rem;
+}
+
+%estilos-botones{
+    border: solid 1px whitesmoke;
+    border-radius: 1rem;
+    background-color: $color-principal;
+}

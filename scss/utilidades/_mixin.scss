@@ -1,0 +1,25 @@
+//mixin
+
+//mixin con parametros
+
+@mixin estilos-base($margin-top, $padding){
+    margin-top: $margin-top;
+    padding: $padding;
+}
+
+//mixin sin parametros
+
+@mixin footer{
+    background-color: rgb(231, 220, 220);
+    text-align: center;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 1rem;
+    margin-top: 3rem;
+    padding: 1rem;
+}
+
+@mixin grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}

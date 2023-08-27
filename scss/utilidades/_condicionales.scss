@@ -1,0 +1,88 @@
+@import "mixin";
+
+// condiciones para mobile
+/* mq para mobile */
+
+@media screen and (min-width:380px) {
+
+    main{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    margin-top: 1rem;
+    text-align: center;
+    }
+
+    main h1{
+    margin-bottom: 1rem;
+    }
+
+    main h2{
+    margin-top: 1rem;
+    text-align: center;
+    }
+
+    main p{
+    margin-bottom: 1rem;
+    padding: 1rem;
+    }
+
+    main div img{
+    width: 70vh;
+    padding: 1rem;
+    }
+
+    section.imagenes-ocultas img{
+    display: flex;
+    }
+
+}
+// condiciones para tablet
+/*mq para tablet */
+
+@media screen and (min-width:768px) {
+
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imagenes-ocultas img{
+        margin-top: 0.3rem;
+    }
+    
+}
+// condiciones para desktop
+/* mq para desktop */
+
+@media screen and (min-width:1200px) {
+
+    header{
+        padding: 0.3rem;
+    }
+
+    main div.carousel-inner{
+        padding: 6rem;
+    }
+
+    main section .imagenes-ocultas{
+        @include grid;
+    }
+
+    main div.fotos-varias{
+        @include grid;
+    }
+
+    main div.nuestras-ofertas{
+        @include grid;
+    }
+
+    p{
+        margin-top: 2rem;
+    }
+
+    footer{
+        margin-top: 6rem;
+    }
+}

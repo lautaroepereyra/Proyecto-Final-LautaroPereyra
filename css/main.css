@@ -1,0 +1,94 @@
+/*reset en css */
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box; }
+
+header .botones {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  padding: 2rem; }
+
+header .ingresar button, header .registrarse button {
+  border: solid 1px whitesmoke;
+  border-radius: 1rem;
+  background-color: #e4c3ad; }
+
+/*estilos generales*/
+body {
+  background-color: #e4c3ad; }
+
+header {
+  display: flex;
+  background-color: #e7dcdc;
+  justify-content: space-between; }
+  header nav div ul li {
+    margin-top: 1rem;
+    padding: 0.3rem;
+    background-color: #e4c3ad;
+    border-radius: 1rem;
+    border: solid 1px whitesmoke; }
+
+/*estilos de footer*/
+footer {
+  background-color: #e7dcdc;
+  text-align: center;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 1rem;
+  margin-top: 3rem;
+  padding: 1rem; }
+
+/* mq para mobile */
+@media screen and (min-width: 380px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    margin-top: 1rem;
+    text-align: center; }
+  main h1 {
+    margin-bottom: 1rem; }
+  main h2 {
+    margin-top: 1rem;
+    text-align: center; }
+  main p {
+    margin-bottom: 1rem;
+    padding: 1rem; }
+  main div img {
+    width: 70vh;
+    padding: 1rem; }
+  section.imagenes-ocultas img {
+    display: flex; } }
+
+/*mq para tablet */
+@media screen and (min-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: column; }
+  .imagenes-ocultas img {
+    margin-top: 0.3rem; } }
+
+/* mq para desktop */
+@media screen and (min-width: 1200px) {
+  header {
+    padding: 0.3rem; }
+  main div.carousel-inner {
+    padding: 6rem; }
+  main section .imagenes-ocultas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr); }
+  main div.fotos-varias {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr); }
+  main div.nuestras-ofertas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr); }
+  p {
+    margin-top: 2rem; }
+  footer {
+    margin-top: 6rem; } }
