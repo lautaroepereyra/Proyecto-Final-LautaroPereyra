@@ -6,55 +6,9 @@
     margin: 0px;
     box-sizing: border-box;
 }
-
+//estilos generales
+/*estilos generales*/
 @import "utilidades/variables";
 @import "utilidades/mixin";
 @import "utilidades/extend";
-
-//estilos generales
-/*estilos generales*/
-
-body{
-    background-color: $color-principal;
-}
-
-//nesting
-
-header{
-    display: flex;
-    background-color: $color-secundario;
-    justify-content: space-between;
-
-    nav{
-        div{
-            ul{
-                li{
-                    @include estilos-base(1rem, 0.3rem);
-                    background-color: rgb(228, 195, 173);
-                    border-radius: 1rem;
-                    border: solid 1px whitesmoke;
-                }
-            }
-        }
-    }
-
-    .botones{
-        @extend %estilos;
-    }
-
-    .ingresar button{
-        @extend %estilos-botones;
-    }
-
-    .registrarse button{
-        @extend %estilos-botones;
-    }
-}
-
-//estilos de footer
-/*estilos de footer*/
-footer{
-    @include footer;
-}
-
 @import "utilidades/condicionales";
