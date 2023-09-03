@@ -4,7 +4,7 @@
   margin: 0px;
   box-sizing: border-box; }
 
-header .botones {
+header .botones {  
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
@@ -57,7 +57,7 @@ footer {
     margin-bottom: 1rem;
     padding: 1rem; }
   main div img {
-    width: 70vh;
+    width: 100%;
     padding: 1rem; }
   section.imagenes-ocultas img {
     display: flex; } }
