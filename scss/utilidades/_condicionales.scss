@@ -85,4 +85,8 @@
     footer{
         margin-top: 6rem;
     }
+
+    main .formulario {
+        @include grid;
+    }
 }
